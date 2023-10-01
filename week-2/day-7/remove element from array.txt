@@ -1,0 +1,40 @@
+import java.util. *;
+
+    public class sort{
+ 
+    // Driver code
+    public static void main(String args[])
+    {
+        
+        int arr[] = new int[20];
+        Scanner z = new Scanner(System.in);
+       System.out.println("Enter no of array elements");
+        int n ;
+        n = z.nextInt();
+       System.out.println("Enter Array elements");
+       int c=0;
+       
+       for(int i=0;i<n;i++)
+       {
+         arr[i]=z.nextInt();
+   
+         }    
+     System.out.println("enter position of element to delete");
+        int x=z.nextInt();
+          for(int i=x;i<n;i++)
+   {
+     
+     
+       
+       
+       
+        arr[i]=arr[i+1];
+       
+     
+     }
+     n=n-1;
+     for (int i=0;i<n;i++)
+     {
+       System.out.println(arr[i]) ;      
+     }
+ }}

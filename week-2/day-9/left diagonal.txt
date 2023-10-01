@@ -1,0 +1,43 @@
+import java.io.*;
+ import java.util. *;
+
+    public class sort{
+ 
+    // Driver code
+    public static void main(String args[])
+    {
+        
+        int arr[][] = new int[20][20];
+        Scanner z = new Scanner(System.in);
+       System.out.println("Enter no of array rows");
+        int n ;
+        n = z.nextInt();
+       System.out.println("Enter Array elements");
+       
+       
+       for(int i=0;i<n;i++)
+       {
+           for(int j=0;j<n;j++)
+           {
+         arr[i][j]=z.nextInt();
+           }
+       }
+       
+       
+   System.out.println("the diagonal elements are");
+   for(int i=0;i<n;i++)
+   {
+     for(int j=0;j<n;j++)
+     {
+       if(i==j)
+     
+         System.out.println(arr[i][j]);
+       }
+     }
+   }
+   
+ 
+ 
+        
+}
+}

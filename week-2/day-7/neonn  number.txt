@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+public class MyClass {
+    public static void main(String args[]) {
+      
+
+      System.out.println("ENTER A NUMBER ");
+      Scanner o=new Scanner(System.in);
+      int a=o.nextInt();int neon=0;
+      
+      int temp=a;
+      int sq=0;
+      sq=temp*temp;
+      while(sq>0)
+      {
+         int rem=sq%10;
+         
+         
+          neon=neon+rem;
+           sq=sq/10;
+      }
+      if(neon==a)
+       System.out.println(temp+" is a neon number");
+       else
+       
+       System.out.println(temp+"  is not a neon number");
+    }
+}
